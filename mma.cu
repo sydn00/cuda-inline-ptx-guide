@@ -1,13 +1,4 @@
 /*
-Resources:
-https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#constraints
-
-https://docs.nvidia.com/cuda/parallel-thread-execution/#warp-level-matrix-fragment-mma-884-f64
-https://docs.nvidia.com/cuda/parallel-thread-execution/#warp-level-matrix-instructions-mma
-
-(Target ISA Notes -> .f64 floating point type mma operation with .m8n8k4 shape requires sm_80 or higher.)
-
-
 "h" = .u16 reg
 "r" = .u32 reg
 "l" = .u64 reg
