@@ -47,8 +47,23 @@ Collective store operation from shared memory to register.
 *References* <br>
 [stmatrix instruction in PTX Documentation](https://docs.nvidia.com/cuda/parallel-thread-execution/#warp-level-matrix-instructions-stmatrix)
 
+## Matrix Sizes and Supported Types
+In MMA instructions, the operation D=A×B+C is performed, with the following operand sizes:
 
-## NOTES
+| Matrix | Dimensions |
+| -------| ---------- |
+| A      | m x k      |
+| B      | k x n      |
+| C      | m x n      |
+| D      | m x n      |
+
+For a list of supported data types in MMA operations, check the WMMA (Warp Matrix Multiply-Accumulate) section of the CUDA C++ Programming Guide.
+
+*References* <br>
+[Element Types and Matrix Sizes](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#element-types-and-matrix-sizes)
+
+
+## Notes
 Important notes for the Target ISA regarding double-precision MMA operations are detailed below.
 
 * .f64 floating point type mma operation with .m8n8k4 shape requires sm_80 or higher.
