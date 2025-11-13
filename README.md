@@ -57,10 +57,10 @@ In MMA instructions, the operation D=A×B+C is performed, with the following ope
 | C      | m x n      |
 | D      | m x n      |
 
-For a list of supported data types in MMA operations, check the WMMA (Warp Matrix Multiply-Accumulate) section of the CUDA C++ Programming Guide.
+For a list of supported data types in MMA operations, check the "Matrix Shape" section of the PTX documentation.
 
 *References* <br>
-[Element Types and Matrix Sizes](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#element-types-and-matrix-sizes)
+[Element Types and Matrix Sizes](https://docs.nvidia.com/cuda/parallel-thread-execution/#warp-level-matrix-shape)
 
 
 ## Notes
